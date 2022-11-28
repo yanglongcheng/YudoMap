@@ -1,0 +1,335 @@
+body {
+	/* background-color: rgb(255, 255, 255, 0.3); */
+}
+
+header {
+	top: 0;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	/* opacity: 0.5; */
+}
+
+#titleId a {
+	width: 100px;
+	/* height: 30px; */
+	background-color: #fff;
+	font-size: 15px;
+	text-align: center;
+	/* border-radius: 25px; */
+	transition: 0.5s;
+}
+
+#titleId a:hover {
+	background-color: #0091ff;
+	color: white !important;
+
+}
+
+#wallpaper {
+	top: 52px;
+	/* margin-top: 52px; */
+	/* z-index: -1; */
+
+}
+
+#ads {
+	height: auto;
+	top: 10%;
+	left: 20%;
+	color: #fff;
+	position: absolute;
+	z-index: 1;
+	text-transform: none;
+	border-radius: 25px;
+	padding: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 10px 0px rgba(131, 131, 131, 0.3);
+	/* opacity: .1; */
+}
+
+#logoFont {
+	font-size: 50px;
+	font-family: 黑体;
+
+}
+
+#iptsearch {
+	margin-left: 15px;
+	width: 240px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 15px;
+	border: #fff;
+	outline: 0;
+
+}
+
+.searchOut {
+	display: flex;
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	border: #fff;
+
+}
+
+#searchIcon {
+	color: black;
+	font-size: 25px;
+}
+
+#searchIcon:hover {
+	color: #f34040ff;
+	font-size: 25px;
+}
+
+#serTab {
+	height: 30px;
+	border-radius: 15px;
+
+}
+
+#serTab:hover {
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255, 0.3) !important;
+	color: #fff;
+
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	background: transparent;
+	padding: 0;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button.learn-more {
+	width: 120px;
+	height: auto;
+}
+
+button.learn-more .circle {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 2.5rem;
+	height: 2rem;
+	background: #206eff;
+	border-radius: 0;
+}
+
+button.learn-more .circle .icon {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	left: 0.625rem;
+	width: 0.825rem;
+	height: 0.125rem;
+	background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+	position: absolute;
+	content: "";
+	top: -0.29rem;
+	right: 0.0625rem;
+	width: 0.625rem;
+	height: 0.625rem;
+	border-top: 0.125rem solid #fff;
+	border-right: 0.125rem solid #fff;
+	transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0.75rem 0;
+	margin: 0 0 0 1.85rem;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.6;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+button:hover .circle {
+	width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+	background: #fff;
+	transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+	color: #fff;
+}
+
+#hotCard img {
+	object-fit: fill;
+}
+
+#container {
+	-webkit-column-width: 354px;
+	/*Safari and Chrome*/
+	-moz-column-width: 354px;
+	/*Firefox*/
+	-o-column-width: 354px;
+	/*Opera*/
+	-ms-column-width: 354px;
+	/*IE*/
+	column-width: 354px;
+}
+
+#container>div {
+	width: 354px;
+	/*宽度根据实际情况调节，应与上面一致*/
+	overflow: auto;
+	/*防止内容溢出导致布局错位*/
+}
+
+#changes {
+	color: #ff0000 !important;
+	border-bottom: solid 2px red;
+}
+
+#changesBack {
+	color: #000000 !important;
+	border-bottom: 0px;
+}
+
+#allImage .card {
+	/* border: solid rgb(213, 213, 213) 2px !important; */
+	box-shadow: 0px 0px 5px #737373;
+	overflow: hidden;
+}
+
+#allImage img:hover {
+
+	animation: move .3s linear forwards;
+}
+
+.competition img:hover {
+	animation: move .3s linear forwards;
+}
+
+@keyframes move {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.25);
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#followHim {
+	width: 90px;
+	height: 40px;
+	/* border-radius: 10px; */
+	transition: .25s;
+	background-color: #007bff !important;
+}
+
+
+
+#followHim:hover {
+	background-color: #f10000 !important;
+	animation: followMove .25s linear forwards;
+}
+
+@keyframes followMove {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+#clicklike {
+	width: 90px;
+	height: 40px;
+	border: solid 2px #d6d6d6;
+}
+
+#clicklike:hover {
+	color: #ff0000;
+	border: solid 2px #6c6c6c;
+	animation: followMove .25s linear forwards;
+	/* background-color: #ff0000; */
+}
+
+.modaltarget h5 {
+	margin-left: 10px !important;
+	font-size: 15px;
+}
+
+
+.cardalert {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	cursor: pointer;
+	flex-direction: column;
+	transition: all 1s;
+	z-index: 99;
+}
+
+.cardalert div {
+	width: 200px;
+	height: 100px;
+	border-radius: 15px;
+	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	position: absolute;
+	align-items: center;
+}
+
+.cardalert i {
+	font-size: 30px;
+}
+
+/* .card-columns {
+	column-count: 4 !important;
+} */

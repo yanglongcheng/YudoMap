@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="referrer" content="no-referrer" />
+	<meta name="author" content="YLC" />
+	<meta name="description" content="分享身边的美丽风景">
+	<meta name="keywords" content="风景，摄影，图文">
+	<link rel="stylesheet" href="/OurPhoto/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="/OurPhoto/css/Photo.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>图文分享社区</title>
+	<style>
+		#views {
+			color: #ff0000 !important;
+			border-bottom: solid 2px red;
+		}
+
+		/* #changes {
+			color: #ff0000 !important;
+			border-bottom: solid 2px red;
+		}
+
+		#changesBack {
+			color: #000000 !important;
+			border-bottom: 0px;
+		} */
+
+		.nav .nav-link.active {
+			background-color: transparent !important;
+			border-bottom: solid #ff0000 !important;
+			font-weight: 1000;
+			color: black !important;
+			transition: 0.25s;
+		}
+	</style>
+	<body>
+		<!-- 导航栏 -->
+		<div id="headerBar">
+		</div>
+
+		<div class="py-0" style="margin-top: 72px;">
+			<!-- 卡片区 -->
+			<div class="nav d-flex flex-grow-1 justify-content-center mb-3 mt-0 " style="font-size: 15px;">
+				<a href="#sunsetCard" class="nav-link text-muted p-0 ml-4 font-weight-bold active"
+					data-toggle="tab">日落</a>
+				<a href="#seaCard" class="nav-link text-muted p-0 ml-4 font-weight-bold" data-toggle="tab">大海</a>
+				<a href="#forestCard" class="nav-link text-muted p-0 ml-4 font-weight-bold" data-toggle="tab">森林</a>
+			</div>
+
+			<div class="tab-content">
+				<!-- 日落标签 -->
+				<div class="tab-pane active" id="sunsetCard">
+					<div id="sunPhoto">
+					</div>
+				</div>
+				<!-- 大海标签 -->
+				<div class="tab-pane fade" id="seaCard">
+					<div id="seaPhoto">
+					</div>
+				</div>
+				<!-- 森林标签 -->
+				<div class="tab-pane fade" id="forestCard">
+					<div id="forestPhoto">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 页脚 -->
+		<div id="footer">
+		</div>
+		<script src="/OurPhoto/js/jquery-3.6.0.min.js"></script>
+		<script src="/OurPhoto/js/bootstrap.min.js"></script>
+		<script src="/OurPhoto/js/bootstrap.bundle.min.js"></script>
+		<script src="/OurPhoto/js/cardAjax.js"></script>
+
+	</body>
+
+</html>
